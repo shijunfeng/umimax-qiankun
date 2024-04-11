@@ -1,0 +1,56 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add @zyhl/web-component
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Common Files\microsoft shared\TigerKin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;D:\nvm;C:\Program Files\nodejs;C:\Program Files\Git\cmd;D:\Program Files\Java\jdk1.8.0_351;D:\Program Files\JetBrains\IntelliJ IDEA 2023.1\apache-maven-3.9.1\bin;C:\Program Files\TortoiseGit\bin;D:\Program Files\微信web开发者工具\dll;D:\Program Files\Java\jdk1.8.0_351\bin;C:\Users\NINGMEI\AppData\Local\pnpm;C:\Users\NINGMEI\AppData\Local\Microsoft\WindowsApps;C:\Users\NINGMEI\.dotnet\tools;D:\nvm;C:\Program Files\nodejs;D:\Program Files\JetBrains\IntelliJ IDEA 2023.1\bin;;C:\Users\NINGMEI\AppData\Local\GitHubDesktop\bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.14.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: write EPROTO 38212:error:1408F10B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:332:
+  
+      at WriteWrap.onWriteComplete [as oncomplete] (node:internal/stream_base_commons:94:16)
+
+npm manifest: 
+  {
+    "private": true,
+    "author": "shijunfeng <451703143@qq.com>",
+    "scripts": {
+      "dev": "max dev",
+      "build": "max build",
+      "format": "prettier --cache --write .",
+      "prepare": "husky",
+      "postinstall": "max setup",
+      "setup": "max setup",
+      "start": "npm run dev"
+    },
+    "dependencies": {
+      "@ant-design/icons": "^5.0.1",
+      "@ant-design/pro-components": "^2.4.4",
+      "@umijs/max": "^4.1.5",
+      "antd": "^5.4.0"
+    },
+    "devDependencies": {
+      "@types/react": "^18.0.33",
+      "@types/react-dom": "^18.0.11",
+      "husky": "^9",
+      "lint-staged": "^13.2.0",
+      "prettier": "^2.8.7",
+      "prettier-plugin-organize-imports": "^3.2.2",
+      "prettier-plugin-packagejson": "^2.4.3",
+      "typescript": "^5.0.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
