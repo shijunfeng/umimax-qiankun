@@ -25,33 +25,22 @@ export function onRouteChange({
   basename,
   isFirst,
 }) {
-  debugger;
-  //   history.push(location.pathname);
+  
 }
 export function patchClientRoutes({ routes }: any) {
   routes[0].children.forEach((item: any, index: number) => {
     if (item.microApp) {
       item.path = '/' + item.microApp + item.path;
-      const componentProps = {
-        appName: item.microApp,
-        base: '/' + item.microApp,
-        routePath: item.microApp,
-        masterHistoryType: item.microAppProps?.hisory || 'browser',
-        // routeMode: MicroAppRouteMode.MATCH,
-        routeProps: {},
-      };
+   
       const componentProps1 = {
         name: item.microApp,
         // history: 'browser',
         base: '/' + item.microApp,
       };
       routes[0].children[index].element = <MicroApp {...componentProps1} />;
-      //   routes[0].children[index].element =
-      //     getMicroAppRouteComponent(componentProps);
-      //   routes[0].children[index].element = <MicroApp {...componentProps} />;
+  
     }
   });
-  debugger;
 }
 
 export const qiankun = {
